@@ -1,0 +1,96 @@
+.newad {
+    display: flex;
+      
+      justify-content: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .postAd {
+    display: flex;
+    justify-content: center;
+  }
+  .newAd h3 {
+    margin-top: 10px;
+    display: flex;
+    color: white;
+    background-color:rgb(29, 161, 135);
+    width: fit-content;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    border-radius:5px ;
+  }
+
+  .newAd p {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+  }
+  
+  .formcontent {
+   
+      width: 450px;
+      background-color: rgb(27, 89, 147);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
+    
+  }
+  
+  .title {
+    
+    background-color: white;
+    border: 1px;
+    width: 400px;
+    color: black;
+    border-color:  rgb(139, 143, 143);
+    border-style: solid; 
+  }
+  
+  .ad {
+   
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+    padding: 5px;
+    border-color:2px rgb(152, 156, 156);
+    border-style: solid;
+  }
+  
+  
+  .formcontent button {
+    
+    border-color: aqua;
+    background-color: rgb(84, 85, 91);
+    color: white;
+    border-radius: 3px;
+  }
+
+  .formcontent button:hover {
+    background-color: rgb(158, 152, 152);
+    cursor: pointer;
+  }
+ 
+
+  @media (max-width: 578px) {
+    .formcontent {
+      width: 92%;
+      }
+
+    .title {
+      width: 97%;
+    }
+
+    .ad {
+      width: 97%;
+    }
+    }
+     

@@ -1,0 +1,78 @@
+.homePage {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#surfing{
+  background-image: url("../../Images/surfing.jpg");
+}
+
+#kitesurfing{
+  background-image: url("../../Images/Kitesurfing.jpg");
+}
+
+#scubadiving{
+  background-image: url("../../Images/Scubadiving.jpg");
+}
+
+.aa {
+    position: relative;
+    top: 1rem;
+    margin: 1.25rem;
+    /* width: 26%; */
+    width: 280px;
+    height: 400px;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
+    /* background-image: url("../../Images/Scubadiving.jpg"); */
+    
+  }
+  
+  .sportName {
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aqua;
+  }
+
+  .training {
+   
+    font-weight: lighter;
+    color: white;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .aaa:hover {
+    /* background-color: rgb(12, 192, 192); */
+    text-decoration: none;
+    
+  }
+
+  .sportName:hover {
+    /* background-color: rgb(12, 192, 192); */
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(28, 100, 100)
+  }
+
+  .training:hover {
+    /* background-color: rgb(12, 192, 192); */
+    text-decoration: none;
+    cursor: pointer;
+    color: coral;
+  }
+
+
+
+@media (max-width: 511px) {
+.aa {
+  width: 70%;
+}
+ 
+}

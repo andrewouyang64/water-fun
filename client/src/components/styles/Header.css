@@ -1,0 +1,52 @@
+.head {
+    background-color: rgb(12, 125, 166);
+    height: 80px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.head h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: oblique;
+font-weight: initial;
+}
+
+
+.oceanFun {
+    color: white;
+   
+}
+.oceanFun:hover {
+    color: rgb(122, 205, 235);
+    /* color:rgb(29, 161, 135) ; */
+    text-decoration: none;
+}
+
+.logged {
+    margin-left: 10px;
+    background-color: rgb(29, 161, 135);
+    /* background-color:rgb(91, 188, 175) ; */
+    font-size: 1.2rem;
+    padding: 7px;
+    border-radius: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.logout {
+   
+    padding: 8px;
+}
+
+.logout:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 504px) {
+    .head {
+        padding-top: 8px;
+        height: fit-content;
+    }
+    
+}
