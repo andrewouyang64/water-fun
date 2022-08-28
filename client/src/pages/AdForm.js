@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
-// import { Link } from 'react-router-dom';
 import { ADD_AD } from '../utils/mutations';
 import { QUERY_ADS, QUERY_SINGLE_SPORT } from '../utils/queries';
 import '../components/styles/AdForm.css';
@@ -16,12 +14,8 @@ const AdForm = () => {
     const { data } = useQuery(QUERY_ADS, {
         // pass URL parameter
         variables: { sportName: sportName },
-
     });
-    console.log(sportName)
-    // const ads = data?.ads || {};
-
-
+    
     const [title, setTitle] = useState('');
     const [adText, setAdText] = useState('');
     const [characterCount, setCharacterCount] = useState(0);
@@ -33,20 +27,7 @@ const AdForm = () => {
                 variables: { name: sportName }
             }
         ]
-        // update(cache, { data: { addAd } }) {
-        //     try {
-        //         const { ads } = cache.readQuery({ query: QUERY_ADS });
-
-        //         cache.writeQuery({
-        //             query: QUERY_ADS,
-        //             data: { ads: [addAd, ...ads] },
-        //         });
-        //     } catch (e) {
-        //         console.error(e);
-        //     }
-
-        //     // update me object's cache
-        // },
+        
     });
 
     const handleFormSubmit = async (event) => {
@@ -101,15 +82,12 @@ const AdForm = () => {
                         <textarea className='title'
                             value={title}
                             name="title"
-                            // cols="45"
                             onChange={handleChange}
                             placeholder="Title of you ad"
                         ></textarea><br/><br/>
                         <textarea className='ad'
                             value={adText}
                             name="adText"
-                            // cols="45"
-                            // rows="6"
                             onChange={handleChange}
                             placeholder="Here's a new ad..."
                         ></textarea>
@@ -118,14 +96,9 @@ const AdForm = () => {
                         <button type='button' onClick={handleFormSubmit}>
                             Submit Your Ad
                         </button>
-                    
-
                 </form>
                 </div>
             </div>
-            
-        
-       
     );
 
 }

@@ -23,14 +23,12 @@
     position: relative;
     top: 1rem;
     margin: 1.25rem;
-    /* width: 26%; */
     width: 280px;
     height: 400px;
     background-color: aqua;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
-    /* background-image: url("../../Images/Scubadiving.jpg"); */
     
   }
   
@@ -49,20 +47,17 @@
   }
 
   .aaa:hover {
-    /* background-color: rgb(12, 192, 192); */
     text-decoration: none;
     
   }
 
   .sportName:hover {
-    /* background-color: rgb(12, 192, 192); */
     text-decoration: none;
     cursor: pointer;
     color: rgb(28, 100, 100)
   }
 
   .training:hover {
-    /* background-color: rgb(12, 192, 192); */
     text-decoration: none;
     cursor: pointer;
     color: coral;

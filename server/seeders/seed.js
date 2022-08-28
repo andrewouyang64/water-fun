@@ -10,15 +10,9 @@ db.once('open', async () => {
     await Sport.deleteMany({});
     await User.deleteMany({});
     await Ad.deleteMany({});
-
-
     await User.create(userSeeds);
     await Sport.create(sportSeeds);
-    // const User = await User.insertMany(schoolData);
-    // const Sport = await Sport.insertMany(classData);
-    // const Ad = await Ad.insertMany(professorData);
-
-
+   
     for (let i = 0; i < adSeeds.length; i++) {
       const { _id, adAuthor, sportName } = await Ad.create(adSeeds[i]);
 

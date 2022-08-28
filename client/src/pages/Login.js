@@ -42,7 +42,6 @@ const Login = (props) => {
   };
 
   return (
-    // <main className="flex-row justify-center mb-4">
     <div><br></br><br></br>
       <div className="loginPage">
         <div className="login">
@@ -90,7 +89,6 @@ const Login = (props) => {
         </div>
       </div>
       </div>
-    // </main>
   );
 };
 

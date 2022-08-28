@@ -57,4 +57,3 @@ THEN I am able to logout and send back to the login page
 
 This project is using MIT license.
 
-Copy right @ 2022 Xuan Huy Bui - Alicia - Andrew - Glenn

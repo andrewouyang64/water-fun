@@ -39,7 +39,7 @@ const Signup = () => {
   };
 
   return (
-    // <main className="flex-row justify-center mb-4">
+    
     <div><br></br><br></br>
       <div className="signupPage">
         <div className="signup">
@@ -95,7 +95,6 @@ const Signup = () => {
         </div>
       </div>
       </div>
-    // </main>
   );
 };
 

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { useQuery } from '@apollo/client';
 
 import CommentList from '../CommentList';
@@ -8,11 +7,9 @@ import CommentForm from '../CommentForm';
 import { QUERY_SINGLE_AD } from '../../utils/queries';
 
 const SingleAd = ({ adId }) => {
-    // Use `useParams()` to retrieve value of the route parameter `:profileId`
-    // const { adId } = useParams();
+   
     console.log(adId)
     const { loading, data } = useQuery(QUERY_SINGLE_AD, {
-        // pass URL parameter
         variables: { adId: adId },
     });
 
@@ -30,20 +27,15 @@ const SingleAd = ({ adId }) => {
                 </span>
             </h3>
             <div className="bg-light py-4">
-                {/* <blockquote */}
                 <p
                     className="p-4 adFont"
                     style={{
-                        // fontSize: '1.2rem',
-                        fontStyle: 'italic',
-                        // border: '2px dotted #1a1a1a',
+                        fontStyle: 'italic',  
                         lineHeight: '1.5',
                     }}
                     >
-                {/* > */}
                     {ad.title} <br/>
                     {ad.adText}
-                {/* </blockquote> */}
                 </p>
                 <h4 className='contact' >contact me at :{ad.email}</h4>
             </div>

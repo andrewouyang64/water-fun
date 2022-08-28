@@ -57,7 +57,6 @@ const CommentForm = ({ adId }) => {
                         className="flex-row justify-center justify-space-between-md align-center"
                         onSubmit={handleFormSubmit}
                     >
-                        {/* <div className="col-12 col-lg-9"> */}
                             <textarea
                                 name="commentText"
                                 placeholder="Add your comment..."
@@ -66,13 +65,11 @@ const CommentForm = ({ adId }) => {
                                 style={{ lineHeight: '1.5', resize: 'vertical' }}
                                 onChange={handleChange}
                             ></textarea>
-                        {/* </div> */}
-
-                        {/* <div className="col-12 col-lg-3"> */}
+                       
                             <button className="commentButton" type="submit">
                                 Submit
                             </button>
-                        {/* </div> */}
+                        
                     </form>
                     </div>
                 </>

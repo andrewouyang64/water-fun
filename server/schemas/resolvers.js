@@ -68,10 +68,7 @@ const resolvers = {
           adAuthor
 
         });
-        // await User.findOneAndUpdate(
-        //   { _id: context.user._id },
-        //   { $addToSet: { ads: ad._id } }
-        // );
+        
         await Sport.findOneAndUpdate(
           { name: sportName },
           {
@@ -101,39 +98,6 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
-    // removeThought: async (parent, { adId }, context) => {
-    //   if (context.user) {
-    //     const ad = await Thought.findOneAndDelete({
-    //       _id: adId,
-    //       adAuthor: context.user.username,
-    //     });
-
-    //     await User.findOneAndUpdate(
-    //       { _id: context.user._id },
-    //       { $pull: { ads: ad._id } }
-    //     );
-
-    //     return ad;
-    //   }
-    //   // throw new AuthenticationError('You need to be logged in!');
-    // },
-    // removeComment: async (parent, { adId, commentId }, context) => {
-    //   if (context.user) {
-    //     return Ad.findOneAndUpdate(
-    //       { _id: adId },
-    //       {
-    //         $pull: {
-    //           comments: {
-    //             _id: commentId,
-    //             commentAuthor: context.user.username,
-    //           },
-    //         },
-    //       },
-    //       { new: true }
-    //     );
-    //   }
-    //   // throw new AuthenticationError('You need to be logged in!');
-    // },
   },
 };
 
